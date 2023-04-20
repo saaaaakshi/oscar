@@ -1,0 +1,44 @@
+
+    .details table {
+        width: 100%;
+        border-collapse: collapse;
+        color: var(--text-black-900);
+    }
+    
+    .details table thead, td {
+        /* font-weight: 600; */
+        border-bottom: 2px solid var(--text-black-900);
+        border-right: 2px solid var(--text-black-900); 
+    }
+    .details, table{
+        margin-bottom:auto;
+        content: none;
+    }
+    .details table{
+        border: 2px solid var(--text-black-900);
+    }
+    .details .recentOrders table tr {
+        color: var(--black1);
+        border-bottom: 2px solid var(--skin-color);
+    }
+    
+    .details .recentOrders table tr:last-child {
+        border-bottom: none;
+    }
+    
+    .details .recentOrders table tbody tr:hover {
+        background: var(--skin-color);
+        color: var(--bg--black-900);
+    }
+    
+    .details .recentOrders table tr td {
+        padding: 10px;
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        /* font-family: 'League Spartan', sans-serif; */
+    }
+    .details .recentOrders table thead tr{
+        font-weight: 1000;
+        /* background: red; */
+    }

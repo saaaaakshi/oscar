@@ -6,7 +6,7 @@ import AddSecurity from "./AddSecurity";
 import ContinueStaff from "./ContinueStaff";
 
 export default function AddEntity() {
-  const [Entity, SetEntity] = useState("Select...");
+  const [Entity, SetEntity] = useState("Add Staff");
   const options = [
     { key: 1, label: "Add Staff" },
     { key: 2, label: "Add Student" },
@@ -15,12 +15,12 @@ export default function AddEntity() {
 
   const handleStaffSubmit = (event) => {
     event.preventDefault();
-    SetEntity("staffpg2");
+    SetEntity("Add Staff");
   };
 
   return (
     <div>
-      {Entity !== "staffpg2" && (
+      {Entity === "Select Entity" && (
         <Dropdown current={Entity} setCurrent={SetEntity} options={options} />
       )}
       {Entity === "Add Staff" && (

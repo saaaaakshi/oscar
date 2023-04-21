@@ -1,12 +1,20 @@
+import { useState } from "react";
+import Dropdown from "../../components/Dropdown";
 import Form from "../../components/Form";
 
 export default function AddStaff({ handleStaffSubmit }) {
+  const [Entity, SetEntity] = useState("Select Entity");
+  const options = [
+    { key: 1, label: "Add Staff" },
+    { key: 2, label: "Add Student" },
+    { key: 3, label: "Add Security" },
+  ];
   const data = {
     Header: "Add Staff",
     fields: [
       {
         label: "Name",
-        input: <input type="text" placeholder="Enter Name" required />,
+        input: <Dropdown current={Entity} setCurrent={SetEntity} options={options} />,
       },
       {
         label: "Email",

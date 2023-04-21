@@ -21,7 +21,7 @@ export default function Dropdown({ current, setCurrent, options }) {
     <div className="parent">
       <div className="input-box" onClick={() => setOpen(!open)}>
         <span>{current} </span>
-        <span>
+        <span  class="arrow">
           {!open && <IoChevronDownOutline />}
           {open && <IoChevronUpOutline />}
         </span>

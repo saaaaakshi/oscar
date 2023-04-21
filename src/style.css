@@ -101,14 +101,14 @@
   list-style: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  color: var(--nav-text);
+  color: var(--main);
 }
 
 .navigation ul li:hover,
 .navigation ul li.hovered {
   /* background:black; */
-  background: var(--bg-black-100);
-  color: var(--nav-text);
+  background: var(--heading);
+  color: var(--heading);
 }
 
 .navigation ul li:nth-child(1) {
@@ -122,13 +122,13 @@
   width: 100%;
   display: flex;
   text-decoration: none;
-  color: var(--bg-black-100);
+  color: var(--heading);
 }
 
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
   /* color: black; */
-  color: var(--text-black-900);
+  color: var(--main);
 }
 
 .navigation ul li a .icon {
@@ -166,7 +166,7 @@
   background: transparent;
   border-radius: 50%;
   /* box-shadow: 35px 35px 0 10px var(--white); */
-  box-shadow: 35px 35px 0 10px var(--bg-black-100);
+  box-shadow: 35px 35px 0 10px var(--heading);
   pointer-events: none;
 }
 
@@ -181,7 +181,7 @@
   background: transparent;
   border-radius: 50%;
   box-shadow: 35px -35px 0 10px var(--white);
-  box-shadow: 35px -35px 0 10px var(--bg-black-100);
+  box-shadow: 35px -35px 0 10px var(--heading);
   /* background: var(--bg-black-100); */
 
   pointer-events: none;
@@ -531,7 +531,7 @@
     position: fixed;
     right: 0;
     left: initial;
-    color: var(--white);
+    color: var(--main);
   }
 }
 .navigation .active {

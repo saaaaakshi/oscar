@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.details76234 .recentOrders134ss53 {
+.details76234 .recentOrders134ss53{
   position: relative;
   display: grid;
   grid-template-rows: 4rem;
@@ -26,10 +26,12 @@
   box-shadow: 0 3px 6px var(--main);
   border-radius: 20px;
 }
-
+.details76234 .recentOrders134ss53 table{
+  border-radius: 5px;
+}
 .details76234 table {
   width: 100%;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   color: var(--text-black-900);
   overflow-x: hidden;
   width: fit-content;
@@ -43,15 +45,11 @@
 
 
 
-.details76234 .recentOrders134ss53 table tr:last-child {
-  border-bottom: none;
-}
 
 
 
-.details76234 .recentOrders134ss53 table tr td {
-  padding: 10px;
-}
+
+
 
 
 
@@ -126,14 +124,11 @@
 .details76234 table {
   width: 100%;
   border-collapse: collapse;
-  color: var(--text-black-900);
+  color: var(--main);
+  border-radius: 50px;
+  /* background: red; */
 }
 
-.details76234 table thead, td {
-  /* font-weight: 600; */
-  border-bottom: 2px solid var(--main);
-  border-right: 2px solid var(--main); 
-}
 .details76234, table{
   margin-bottom:auto;
   content: none;
@@ -142,8 +137,10 @@
   border: 2px solid var(--main);
 }
 .details76234 .recentOrders134ss53 table tr {
-  color: var(--black1);
-  border-bottom: 2px solid var(--skin-color);
+  /* color: var(--black1); */
+  /* border-bottom: 2px solid var(--skin-color); */
+  /* background:red; */
+  border-radius: 5px;
 }
 
 .details76234 .recentOrders134ss53 table tr:last-child {
@@ -153,8 +150,8 @@
 .details76234 .recentOrders134ss53 table tbody tr:hover {
   background: var(--main);
   color: var(--heading);
-  border-bottom: 2px solid var(--heading);
-  border-right: 2px solid var(--heading); 
+  /* border-bottom: 2px solid var(--heading);
+  border-right: 2px solid var(--heading);  */
 }
 
 .details76234 .recentOrders134ss53 table tr td {

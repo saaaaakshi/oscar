@@ -96,7 +96,7 @@
 .sidebar .nav-links li a .link_name {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: var(--main);
   transition: all 0.4s ease;
 }
 .sidebar.close .nav-links li a .link_name {
@@ -167,7 +167,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1d1b31;
+  /* background: #1d1b31; */
   padding: 12px 0;
   transition: all 0.5s ease;
 }
@@ -187,7 +187,6 @@
   object-fit: cover;
   border-radius: 16px;
   margin: 0 14px 0 12px;
-  background: #1d1b31;
   transition: all 0.5s ease;
 }
 .sidebar.close .profile-details img {
@@ -210,7 +209,7 @@
 }
 .home-section {
   position: relative;
-  background: #e4e9f7;
+  background: var(--main);
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -227,7 +226,7 @@
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text {
-  color: #11101d;
+  color: var(--heading);
   font-size: 35px;
 }
 .home-section .home-content .bx-menu {

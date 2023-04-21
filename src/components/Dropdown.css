@@ -1,42 +1,55 @@
 .parent {
   display: flex;
+  /* flex-direction: row; */
+  width: 100%;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
-  padding-top: 15rem;
 }
 
 .input-box {
   background-color: var(--main);
-  padding: 20px;
+  padding: 0 15px;
   display: flex;
-  width: fit-content;
-  border-radius: 30px;
-  margin: 20px;
-  max-width: 80%;
-  font-size: 30px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 17px;
   color:var(--heading);
+  height: 42px;
+
   
+}
+
+.arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  align-content: end;
+}
+
+.options{
+  display: flex;
+  flex-direction: row;
+  width: 20vh;
+  margin: 5px;
+  padding: 7px;
+  width: 100%;
 }
 .options-box {
   background-color: var(--main);
   color:var(--heading);
   padding: 10px;
-  display: inline;
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
 }
-
-.options{
-  /* background: red; */
-  padding: 3px;
-  width: 50vh;
-  /* border-bottom: 2px solid #000; */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
 .options:hover{
+  width: 100%;
   background: var(--heading);
   color: var(--main);
+  cursor: pointer;
+  border-radius: 5px;
 }
